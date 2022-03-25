@@ -1,0 +1,23 @@
+#input form {
+  text-align: right;
+}
+
+#input form div {
+  text-align: center;
+  margin: 0.5em;
+}
+
+#input form div input[type="submit"] {
+  width: 100px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
