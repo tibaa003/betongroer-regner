@@ -9,11 +9,12 @@ function submitForm() {
   };
   var lengde = formEL.lengde.value;
 
-  if (diameter["ytre"] <= diameter["indre"]) {
+  if (parseInt(diameter["ytre"]) <= parseInt(diameter["indre"])) {
     alert("ytre diameter kan ikke være mindre eller lik indre diameter");
   } else {
     var volum = volumFunc(diameter, lengde);
-    var vekt = volum * 2.4;
+    var vekt = volum * 2;
+    console.log(vekt)
     var sekker = Math.ceil(vekt / B25["sekkVekt"]);
     var pris = sekker * B25["sekkPris"];
     print(vekt, sekker, pris);
